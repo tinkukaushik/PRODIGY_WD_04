@@ -103,9 +103,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-const mobileNavLinks = document.querySelector('.mobile-nav-links');
 
-mobileNavToggle.addEventListener('click', () => {
-    mobileNavLinks.classList.toggle('show');
-});
