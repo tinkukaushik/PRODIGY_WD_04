@@ -115,7 +115,7 @@ nav {
     width: 50%;
     height: 100%;
     scale: 100%;
-    background-image:url('WhatsApp Image 2024-07-13 at 5.55.07 PM.jpeg') ;
+    background-image: url('/pic/WhatsApp\ Image\ 2024-07-13\ at\ 5.55.07\ PM.jpeg');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -539,9 +539,17 @@ footer::before {
     margin-bottom: 30px;
 }
 /* responsive */
-@media (max-width: 768px) {
+@media (max-width: 360px) {
+     body {
+        overflow-x: hidden;
+     }
+    .hero {
+        
+        overflow-x: hidden;
+    }
     .hero-text {
         text-align: center;
+        font-size: 8px;
     }
 
     .hero-text h1 {
@@ -552,7 +560,13 @@ footer::before {
         font-size: 18px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 360px) {
+    .work-item {
+       font-size: 10px;
+    }
+    .works {
+        overflow-x: hidden;
+    }
     .slide {
         flex-direction: column;
     }
@@ -563,7 +577,7 @@ footer::before {
         margin-bottom: 20px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     .contact-links {
         flex-wrap: wrap;
     }
@@ -572,9 +586,10 @@ footer::before {
         margin: 10px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     .nav-links {
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
 
     .logo-container {
@@ -585,7 +600,7 @@ footer::before {
         font-size: 16px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     .hero {
         padding: 50px 0;
     }
@@ -601,8 +616,11 @@ footer::before {
     .hero-text p {
         font-size: 18px;
     }
+    .contact-links {
+        font-size: 5px;
+    }
 }
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     .about-content {
         padding: 30px 0;
     }
@@ -612,7 +630,7 @@ footer::before {
         font-size: 18px;
     }
 
-    .about-content p,
+    .about-content p,F
     .about-content li {
         font-size: 14px;
     }
@@ -625,7 +643,7 @@ footer::before {
     display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
     .nav-links {
         display: none;
     }
@@ -639,7 +657,7 @@ footer::before {
     }
     .mobile-nav-toggle {
         display: block;
-        font-size: 24px;
+        font-size: 10px;
         color: #333;
         background-color: #fff;
         border: 1px solid #ccc;
