@@ -115,7 +115,7 @@ nav {
     width: 50%;
     height: 100%;
     scale: 100%;
-    background-image: url('WhatsApp Image 2024-07-13 at 5.55.07 PM.jpeg');
+    background-image: url('/pic/WhatsApp\ Image\ 2024-07-13\ at\ 5.55.07\ PM.jpeg');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -293,58 +293,29 @@ work-item h3 {
 
 .star {
     position: absolute;
-    width: 3px;
-    height: 3px;
+    width: 6px;
+    height: 6px;
     background-color: #fff;
     border-radius: 50%;
-    opacity: 0.5;
-    animation: twinkle 2s infinite;
+    opacity: 0;
+    animation: twinkle 5s infinite;
 }
 
-
-
-.star {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
-    border-radius: 50%;
-    opacity: 0.5;
-    animation: twinkle 2s infinite;
-}
-
-/* Keyframes for the twinkle effect */
 @keyframes twinkle {
     0%, 100% {
-        opacity: 0.5;
+        opacity: 0;
         transform: scale(1);
         filter: blur(0px);
     }
     50% {
         opacity: 1;
-        transform: scale(1.4);
-        
-        filter: blur(2px); /* Blur effect */
+        transform: scale(1.5);
+        transform: translateX(-15px);
+        transform: translateY(-16px);
+        filter: blur(2px);
     }
 }
 
-/* Star class to apply the animation */
-.star {
-    width: 5px;
-    height: 5px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    animation: twinkle 2s infinite;
-}
-
-/* Example styling for star container */
-.star-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-   
 
 .slideshow-container {
     width: 100%;
@@ -355,8 +326,12 @@ work-item h3 {
 
 .slides-row {
     display: flex;
-    animation: slide-left 7s linear infinite;
+    width: calc(33% * 7); 
+    animation: slide-left 20s linear infinite;
+    margin-top: 40px;
+    
 }
+
 
 @keyframes slide-left {
     0% {
@@ -368,14 +343,16 @@ work-item h3 {
 }
 
 .slide {
-    flex: 0 0 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
+    flex: 0 0 auto;
+    width: calc(100% / 6); 
+    flex-shrink: 0;  
+    margin: 20px;
+    box-shadow: 0 0 10px white;
+    background-color: #89fbff22;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .card {
@@ -383,8 +360,8 @@ work-item h3 {
     height: 300px;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.766);
+    border-radius: 25px;
     text-align: center;
 }
 
@@ -585,15 +562,32 @@ footer::before {
     .works {
         overflow-x: hidden;
     }
-    .slide {
-        flex-direction: column;
+    .slides-row {
+        display: flex;
+        width: calc(100% * 10); 
+        animation: slide-left 11s linear infinite;
+        margin-top: 40px;  
     }
-
+    .slide {
+        flex: 0 0 auto;
+        width: calc(100% / 9); 
+        flex-shrink: 0;  
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+        background-color: #89fbff00;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    
     .card {
         width: 100%;
-        max-width: 400px;
-        margin-bottom: 20px;
+        max-width: 300px;
+        margin:20px ;
+        
     }
+   
 }
 @media (max-width: 640px) {
     .contact-links {
@@ -637,9 +631,7 @@ footer::before {
     .contact-links {
         font-size: 5px;
     }
-    
-
-
+}
 @media (max-width: 640px) {
     .about-content {
         padding: 30px 0;
