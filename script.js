@@ -88,7 +88,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 showSlide(currentSlide);
-setInterval(nextSlide, 10000);
+setInterval(nextSlide, 5000);
 document.addEventListener('DOMContentLoaded', () => {
     const slideshowContainer = document.querySelector('.slideshow-container');
     const slidesRow = document.querySelector('.slides-row');
