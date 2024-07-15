@@ -301,14 +301,7 @@ work-item h3 {
     animation: twinkle 2s infinite;
 }
 
-@keyframes twinkle {
-    0%, 100% {
-        opacity: 0.5;
-    }
-    50% {
-        opacity: 1;
-    }
-}
+
 
 .star {
     position: absolute;
@@ -320,14 +313,39 @@ work-item h3 {
     animation: twinkle 1s infinite;
 }
 
+/* Keyframes for the twinkle effect */
 @keyframes twinkle {
     0%, 100% {
         opacity: 0.5;
+        transform: scale(1);
+        filter: blur(0px);
     }
     50% {
         opacity: 1;
+        transform: scale(1.4);
+        
+        filter: blur(2px); /* Blur effect */
     }
 }
+
+/* Star class to apply the animation */
+.star {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: twinkle 2s infinite;
+}
+
+/* Example styling for star container */
+.star-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+   
+
 .slideshow-container {
     width: 100%;
     overflow: hidden;
@@ -337,7 +355,7 @@ work-item h3 {
 
 .slides-row {
     display: flex;
-    animation: slide-left 10s linear infinite;
+    animation: slide-left 7s linear infinite;
 }
 
 @keyframes slide-left {
@@ -621,7 +639,7 @@ footer::before {
     }
     .slides-row {
     display: flex;
-    animation: slide-left 7s linear infinite;
+    animation: slide-left 2s linear infinite;
 }
 
 @keyframes slide-left {
