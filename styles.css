@@ -637,21 +637,9 @@ footer::before {
     .contact-links {
         font-size: 5px;
     }
-    .slides-row {
-    display: flex;
-    animation: slide-left 2s linear infinite;
-}
+    
 
-@keyframes slide-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
-}
 @media (max-width: 640px) {
     .about-content {
         padding: 30px 0;
