@@ -681,7 +681,7 @@ footer::before {
         width: 6px;
         border-radius: 10%;
         background-color: #ffffff;
-        font-size: medium;
+        font-size: larger;
         color: blanchedalmond;
         z-index: 1;
     }
