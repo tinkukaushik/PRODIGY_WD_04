@@ -310,7 +310,7 @@ work-item h3 {
     background-color: #fff;
     border-radius: 50%;
     opacity: 0.5;
-    animation: twinkle 1s infinite;
+    animation: twinkle 2s infinite;
 }
 
 /* Keyframes for the twinkle effect */
